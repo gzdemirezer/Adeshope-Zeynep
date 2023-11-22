@@ -13,3 +13,4 @@ type: npm start
 to open it on browser
 
 DO NOT FORGET TO DELETE THE NODE MODULES BEFORE PUSH 
+    thank you Zeynep
