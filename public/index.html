@@ -197,10 +197,13 @@
                     </button>
                 </li>
                 <li class="mb-1">
-                    <button class="col-12 ms-1 btn d-inline-flex align-items-center  border-2 rounded-0 border-end-0 border-top-0 border-bottom-0 border-secondary-subtle bg-white bg-opacity-10 text-white">
-                        <img class="p-3" src="/assets/images/sidebar/sidebar/list/icon/sidebar/active/2. tickets.svg" alt="SettinsIcon">
-                        Tickets
-                    </button>
+                    <!-- <a class="visually-hidden-focusable" href="#main"> -->
+                        <button class="col-12 ms-1 btn d-inline-flex align-items-center  border-2 rounded-0 border-end-0 border-top-0 border-bottom-0 border-secondary-subtle bg-white bg-opacity-10 text-white">
+                            <img class="p-3" src="/assets/images/sidebar/sidebar/list/icon/sidebar/active/2. tickets.svg" alt="SettinsIcon">
+                            Tickets
+                        </button>
+                    <!-- </a> -->
+
                 </li>
                 <li class="mb-1">
                     <button class="btn d-inline-flex align-items-center text-secondary rounded border-0">
@@ -244,25 +247,95 @@
         </div>
     
         <!-- Content in main-->
-        <div class=" bg-secondary bg-opacity-10 col-lg-10 col-md-9 col-sm-8 col-7 pe-5  " style=" height: auto;" >
+        <div id="main" class=" bg-secondary bg-opacity-10 col-lg-10 col-md-9 col-sm-8 col-7 pe-5  " style=" height: auto;" >
     
                 <!-- Thingy on top header ish-->
 
             <div class=" d-flex justify-content-between m-4  bg-primary col-lg-12 col-md-12 col-sm-12 col-12 ">
                 <ul class="fs-4 text-dark fw-bold mt-1">
-                Overview
+                Tickets
                 </ul>
                 <ul  class="d-flex flex-row m-2 pe-4">
                     <ul>
-                        hello
+                        <img class="p-3" src="/assets/images/sidebar/sidebar/list/icon/sidebar/inactive/4. contacts.svg" alt="SettinsIcon">
+                        Jones Ferdinand 
                         <!-- Sources are in the file iff sth is missing easy to download from figma -->
                     </ul>
                 </ul>
             </div>
 
             <!-- All tickets -->
-            <div class=" mx-3 my-5 d-flex row border border-1 border-secondary-subtle rounded bg-white col-lg-12 col-md-12 col-sm-12 col-12 " style="height: 200px;">
-               this is place holder change height to auto
+            <div class=" mx-3 my-5 d-flex row border border-1 border-secondary-subtle rounded bg-white col-lg-12 col-md-12 col-sm-12 col-12 " style="height: auto;">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Ticket Details</th>
+                        <th scope="col">Customer name</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Priority</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      <!-- first row -->
+                        <tr class="pt-4">
+                            <th class="d-flex  justify-content-start" scope="row">
+                                <img src="/assets/images/table/m 5.png"  width="32" height="32" class="mx-5 my-3 rounded-circle" >
+                                <div>
+        
+                                    <h5>Contact not linked</h5>
+                                    <p class="opacity-50">Updated 1 day ago</p>
+                                </div>
+                            </th>
+                            
+                            <td>
+                                <h5>Tom Crusie</h5>
+                                <p class="opacity-50">on 24.05.2019</p>
+                            </td>
+
+                            <td>
+                                <h5>May 26, 2019</h5>
+                                <p class="opacity-50">6:30 PM</p>
+                            </td>
+
+                            <td classd="d-flex  justify-content-between">
+                                <span class="badge rounded-pill text-bg-danger mx-5">High</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                                </svg>
+                            </td>
+                      </tr>
+
+                      <!-- second row -->
+
+                      <tr>
+                            <th class="d-flex justify-content-start" scope="row">
+                            <img width="32" height="32" class="mx-5 my-3" src="/assets/images/table/avi1.png" >
+                            <div>
+                                
+                                <p class="mb-0" >Adding images to Featured post</p>
+                                <small class="opacity-50">Updated 1 day ago</small>
+                            </div>
+                        </th>
+                        <td>
+                            <p>Matt Damon</p>
+                            <p>on 24.05.2019</p>
+                        </td>
+                        <td>
+                            <p>May 26, 2019</p>
+                            <p>8:00 AM</p>
+                        </td>
+                        <td>
+                            <span class="badge rounded-pill text-bg-warning">Low</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                            </svg>
+                        </td>
+                      </tr>
+
+
+                    </tbody>
+                  </table>
             </div>
               
         </div>
@@ -275,5 +348,9 @@
 
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 </body>
 </html>
