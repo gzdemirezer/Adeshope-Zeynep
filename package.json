@@ -11,5 +11,8 @@
   "private": true,
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "-": "^0.0.1"
   }
 }
